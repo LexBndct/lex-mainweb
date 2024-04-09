@@ -1,0 +1,366 @@
+:root{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+    height: 100vh;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 10%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+.container .instagram-logo{
+    margin: 20px;
+    transition: .5s;
+    color: white;
+}
+
+.container .instagram-logo:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-shadow: 0 10px 100px rgba(0, 0, 0, );
+}
+
+.logo{
+    font-size: 40px;
+    color: #fff;
+}
+
+nav ul li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    transition: .5s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: black;
+    -webkit-transition: .5s;
+    font-size: 20px;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+#button-view-profile{
+    margin: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text a{
+    font-size: 16px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid black;
+    color: black;
+    font-weight: 500;
+    -webkit-transition: .5s;
+}
+
+.header-text a:hover{
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    color: white;
+    transform: scale(1.08);
+}
+
+.header-text a:active{
+    transition: .2s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    color: white;
+    transform: scale(1.15);
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* About Me Start */
+#about{
+    height: 100vh;
+    padding: 80px 0;
+    background-image: url(aboutme.jpg);
+}
+
+.row{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.about-col1{
+    flex-basis: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 30px;
+}
+.about-col1 img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.about-col2{
+    flex-basis: 60%;
+}
+
+.about-col2 p {
+    font-weight: 450;
+    font-size: 16px; /* Reduce font size for smaller screens */
+    line-height: 1.5; /* Add some line height for better readability */
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+.sub-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
+.tab-titles {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.tab-links {
+    margin-right: 20px;
+    font-size: 16px; 
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    padding: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+/* About Me Ends */
+
+/* Services / Gym Thingy */
+#services{
+    background-color: #000;
+}
+
+.services-container{
+    height: 100dvh;
+    background-image: url(venividivici.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1); 
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-item {
+    display: block;
+    flex: 1; 
+    background-color: rgb(29, 29, 29, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 5%;
+    -webkit-transition: 1s;
+}
+
+.service-item:hover{
+    transition: .5s;
+    background-color: #000;
+    border: 2px solid white;
+}
+
+/* Footer */
+
+/* Responsive */
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack footer content vertically on smaller screens */
+        align-items: flex-start; /* Align footer content to the start on smaller screens */
+    }
+
+    .footer-content ul li {
+        margin-right: 0; /* Remove margin between footer links on smaller screens */
+        margin-bottom: 10px; /* Add some bottom margin for better spacing */
+    }
+}
+
+
+/* Responsive */
+/* Adjustments for smaller screens */
+/* Responsive */
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%; /* Adjust padding for smaller screens */
+    }
+    
+    .text-box {
+        margin-top: 20%; /* Increase top margin for smaller screens */
+    }
+    
+    
+    .tab-links {
+        font-size: 14px; /* Reduce font size for tab links on smaller screens */
+    }
+    
+    .tab-contents ul li {
+        font-size: 14px; /* Reduce font size for tab contents on smaller screens */
+    }
+    
+    .service-item {
+        flex-basis: calc(50% - 10px); /* Set service item width to 50% minus some spacing for smaller screens */
+        margin-bottom: 10px; /* Add some bottom margin for better spacing */
+    }
+    
+    .services-list {
+        flex-wrap: wrap; /* Wrap service items for smaller screens */
+    }
+}
+
+/* Adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px 2%; /* Further adjust padding for even smaller screens */
+    }
+    
+    .header-text {
+        font-size: 24px; /* Reduce font size for header text on even smaller screens */
+    }
+    
+    .footer-content {
+        flex-direction: column; /* Stack footer content vertically on even smaller screens */
+        align-items: flex-start; /* Align footer content to the start on even smaller screens */
+    }
+    
+    .footer-content ul li {
+        margin-bottom: 10px; /* Add some bottom margin for better spacing between footer links on even smaller screens */
+    }
+}
